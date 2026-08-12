@@ -19,7 +19,7 @@ This repository contains code and resources for predicting dyslexia risk using d
 - [Modeling & Results](#modeling--results)
 - [Evaluation](#evaluation)
 - [Contributing](#contributing)
-- [License](#license)
+
 - [Authors / Maintainers](#authors--maintainers)
 - [Acknowledgements](#acknowledgements)
 
@@ -29,7 +29,6 @@ Dyslexia Risk Prediction using Data Analytics is a project aimed at identifying 
 
 ## Repository Structure
 
-(Adjust paths below if different in your repo.)
 
 - README.md
 - data/                      # raw and processed datasets (not included in repo if large)
@@ -41,7 +40,6 @@ Dyslexia Risk Prediction using Data Analytics is a project aimed at identifying 
 - models/                    # saved model artifacts
 - results/                   # evaluation results, plots, and reports
 - requirements.txt
-- LICENSE
 
 ## Features
 
@@ -178,11 +176,6 @@ Contributions are welcome. Please follow these steps:
 3. Commit your changes and push: `git commit -m "Add feature"`
 4. Open a Pull Request describing your changes
 
-Add a `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` for larger projects.
-
-## License
-
-This project is licensed under the MIT License — see the `LICENSE` file for details. Change the license in this section to match the repository's license.
 
 ## Authors / Maintainers
 
@@ -191,15 +184,3 @@ This project is licensed under the MIT License — see the `LICENSE` file for de
 ## Acknowledgements
 
 - Datasets, libraries, and prior research used as reference.
-
-
----
-
-If you'd like, I can:
-- Customize this README with specifics from the repo (list of notebooks, actual requirements), or
-- Add supporting files such as `requirements.txt`, `CONTRIBUTING.md`, `data/README.md`, or a `.gitignore`.
-
-Next suggested actions (pick one)
-- I will scan the repo and update the README with exact filenames and a requirements.txt if you want me to.
-- I will add a CONTRIBUTING.md and CODE_OF_CONDUCT.md.
-- I will create a data/README.md describing the dataset format — provide a sample or schema.
