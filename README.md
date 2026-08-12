@@ -14,6 +14,7 @@ This repository contains code and resources for predicting dyslexia risk using d
   - [Installation](#installation)
   - [Configuration](#configuration)
   - [Running Notebooks and Scripts](#running-notebooks-and-scripts)
+  - [Run the Webapp](#run-the-webapp)
 - [Dataset](#dataset)
 - [Modeling & Results](#modeling--results)
 - [Evaluation](#evaluation)
@@ -117,6 +118,37 @@ python src/train.py --config config.yaml
 python src/evaluate.py --model models/best_model.pkl
 ```
 
+### Run the Webapp
+
+A web application is included in the repository at:
+
+```
+.idea/New_DyslexiaComputer Games_2026/Webapp
+```
+
+To run the webapp locally:
+
+1. Ensure your virtual environment is active and required packages are installed (if the Webapp folder includes its own requirements file, install it):
+
+```bash
+# from repo root
+cd .idea/New_DyslexiaComputer\ Games_2026/Webapp
+# if there is a requirements.txt inside Webapp
+pip install -r requirements.txt
+```
+
+2. Start the app with:
+
+```bash
+python app.py
+```
+
+3. The app typically serves on http://localhost:5000 (Flask) or http://localhost:8000 (other frameworks). Check `app.py` for the exact port and configuration.
+
+Notes:
+- If the folder name includes spaces, use shell escaping or quotes as shown above.
+- If the app requires environment variables (API keys, database URLs), set them before starting the server.
+
 ## Dataset
 
 This project expects a dataset with participant-level records and relevant features (e.g., reading scores, phonological awareness, demographic attributes). If the dataset contains sensitive information, do not commit it to the repo — add it to `.gitignore` and provide instructions for obtaining the data.
@@ -165,4 +197,9 @@ This project is licensed under the MIT License — see the `LICENSE` file for de
 
 If you'd like, I can:
 - Customize this README with specifics from the repo (list of notebooks, actual requirements), or
-- Commit additional files like `requirements.txt`, `CONTRIBUTING.md`, or `data/README.md`.
+- Add supporting files such as `requirements.txt`, `CONTRIBUTING.md`, `data/README.md`, or a `.gitignore`.
+
+Next suggested actions (pick one)
+- I will scan the repo and update the README with exact filenames and a requirements.txt if you want me to.
+- I will add a CONTRIBUTING.md and CODE_OF_CONDUCT.md.
+- I will create a data/README.md describing the dataset format — provide a sample or schema.
