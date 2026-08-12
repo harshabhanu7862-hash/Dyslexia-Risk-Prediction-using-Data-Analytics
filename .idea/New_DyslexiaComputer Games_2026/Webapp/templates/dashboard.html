@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="overlay-card">
+<h3>Batch Prediction Dashboard</h3>
+<form method="POST" enctype="multipart/form-data">
+<input type="file" name="file" class="form-control mb-3" required>
+<button class="btn btn-warning">Upload & Predict</button>
+</form>
+</div>
+{% endblock %}

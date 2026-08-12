@@ -1,0 +1,33 @@
+body {
+    background: url("../images/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+}
+
+.navbar {
+    background: rgba(0,0,0,0.7);
+}
+
+.overlay-card p {
+    color: black;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.overlay-card h4 {
+    color: black;
+}
+.project-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    color: red;
+    letter-spacing: 1px;
+}

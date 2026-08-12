@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="overlay-card">
+
+<h2 class="text-center mb-4">Understanding Dyslexia and AI-Based Detection</h2>
+
+<p style="text-align: justify;">
+Dyslexia is a specific learning disorder that primarily affects reading accuracy, spelling ability, writing fluency, and phonological processing skills. It is neurological in origin and is not associated with intelligence levels, vision problems, or lack of motivation. Individuals with dyslexia often possess average or above-average intelligence but experience difficulty in decoding words, recognizing familiar words quickly, and comprehending written text efficiently. Early detection of dyslexia is crucial because timely intervention can significantly improve academic performance, confidence, and long-term educational outcomes. Students with dyslexia commonly struggle with phonological awareness, letter-sound relationships, reading speed, working memory, and sequencing skills. These challenges may manifest as slow reading, frequent spelling mistakes, difficulty copying from the board, problems with note-taking, and avoidance of reading tasks.
+
+Research shows that early screening and structured intervention programs greatly enhance learning success. Educational strategies such as multisensory teaching approaches, structured literacy programs, phonics-based instruction, and assistive technologies have proven highly effective in supporting learners with dyslexia. Tools like text-to-speech software, audiobooks, adaptive learning platforms, and speech recognition systems can help reduce academic barriers. Collaboration between parents, teachers, psychologists, and special educators plays a vital role in identifying symptoms and providing individualized learning support.
+
+With advancements in Artificial Intelligence and Machine Learning, automated screening systems have emerged as powerful tools for early detection. AI-driven systems analyze multiple behavioral and cognitive features to identify patterns associated with dyslexia. Machine learning algorithms can process structured datasets, evaluate feature importance, and generate predictive outcomes with high reliability. Our AI Driven Dyslexia Detection System integrates data preprocessing, feature selection, model training, evaluation metrics, and batch prediction capabilities into a unified web-based platform.
+
+The system applies advanced classification algorithms including Extra Trees, Random Forest, Support Vector Machine, Logistic Regression, and Ensemble models. Feature selection techniques improve computational efficiency and remove redundant or less significant variables, ensuring optimized performance. Evaluation metrics such as Accuracy, Precision, Recall, F1 Score, and AUC are used to assess model performance comprehensively. Recall is particularly important in dyslexia detection because minimizing false negatives ensures that fewer affected students are overlooked. Meanwhile, F1 Score balances precision and recall to provide a reliable overall performance measure.
+
+Receiver Operating Characteristic (ROC) curve analysis demonstrates the model’s discrimination capability by evaluating the trade-off between sensitivity and specificity across different thresholds. A higher Area Under the Curve (AUC) indicates stronger classification ability. Comparative performance graphs allow visualization of algorithm efficiency across multiple evaluation metrics, helping select the most balanced and reliable model for deployment.
+
+This system supports batch prediction, enabling users to upload structured CSV test data for large-scale evaluation. Selected features derived from importance ranking ensure that only the most influential attributes contribute to final predictions. The application integrates secure authentication using TinyDB for lightweight data storage, ensuring user privacy and controlled access. The transparent web interface is built using Flask and Bootstrap, providing a responsive and visually engaging user experience with integrated graphical performance analysis.
+
+The project combines concepts from Artificial Intelligence, Machine Learning, Data Science, Web Development, and Educational Technology into a practical decision-support system. Continuous improvement through hyperparameter tuning, threshold optimization, and advanced ensemble techniques can further enhance predictive performance. Future enhancements may include deep learning integration, real-time assessment modules, adaptive testing interfaces, and cloud deployment for large-scale accessibility. Our mission is to provide an intelligent, accessible, and scalable solution for early dyslexia detection, supporting educators and parents in delivering timely academic assistance and empowering students to reach their full potential.
+</p>
+
+<div class="mt-5 text-center">
+    <h4>ROC Curve Analysis</h4>
+    <img src="{{ url_for('static', filename='images/roc_curve_all_models.png') }}" class="img-fluid mt-3 rounded shadow">
+</div>
+
+<div class="mt-5 text-center">
+    <h4>Model Performance Comparison</h4>
+    <img src="{{ url_for('static', filename='images/all_models_comparison_bar_chart.png') }}" class="img-fluid mt-3 rounded shadow">
+</div>
+
+</div>
+{% endblock %}

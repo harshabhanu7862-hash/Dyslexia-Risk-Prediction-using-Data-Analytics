@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="overlay-card">
+<h3>Prediction Results</h3>
+<div class="table-responsive">
+{{ table|safe }}
+</div>
+<a href="/dashboard" class="btn btn-light mt-3">Back</a>
+</div>
+{% endblock %}
