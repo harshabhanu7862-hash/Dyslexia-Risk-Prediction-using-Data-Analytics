@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+sklearn==0.0
+scikit-learn
+imblearn
+flask
+tinydb
+shap
+
+# python version 3.10.9
